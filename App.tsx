@@ -11,7 +11,6 @@ function App(): JSX.Element {
     <ClienteLoginScreen/>
   );
 
-
 }
 
 export default App;
