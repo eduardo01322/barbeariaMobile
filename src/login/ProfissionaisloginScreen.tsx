@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-function LoginScreen(): JSX.Element {
+function ProfissionaisLoginScreen(): JSX.Element {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -23,7 +23,7 @@ function LoginScreen(): JSX.Element {
             <View style={styles.card}>
             <Image style={styles.logoProfissional} resizeMode="contain"
             source={require('../assets/imagens/pngtree-scissor-and-comb.png')} />
-                <Text style={styles.tile}>Login Profissional</Text>
+                <Text style={styles.title}>Login Profissional</Text>
             
                 <TextInput style={styles.input} placeholder="E-mail"
                 placeholderTextColor="#151413"
@@ -74,7 +74,7 @@ const styles= StyleSheet.create({
         shadowOpacity: 0.8,
         shadowRadius: 2,
     },
-    tile: {
+    title: {
         fontSize: 25,
         fontWeight: 'bold',
         color: '#151413',
@@ -108,4 +108,4 @@ const styles= StyleSheet.create({
     }
 })
 
-export default LoginScreen;
+export default ProfissionaisLoginScreen;
