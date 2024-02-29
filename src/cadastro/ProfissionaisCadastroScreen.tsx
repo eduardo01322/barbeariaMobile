@@ -42,9 +42,8 @@ function ProfissionaisCadastroScreen(): JSX.Element {
     }
     
     return (
+        <ScrollView style={{height: '100%', width: "auto"}}>
         <View style={styles.container}>
-            <SafeAreaView style={styles.SafeArea}>
-            <ScrollView style={styles.scrollView}>
             <Image style={styles.logo} resizeMode="contain"
             source={require('../assets/imagens/logo.png')} />
             
@@ -121,9 +120,8 @@ function ProfissionaisCadastroScreen(): JSX.Element {
                 <Text  style={styles.forgotJoin}>Já possui conta? Entre!</Text>
             </TouchableOpacity>
             </View>
-            </ScrollView>
-            </SafeAreaView>
             </View>
+            </ScrollView>
             
     )
 }
@@ -135,15 +133,11 @@ const styles= StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#6a03de'
     },
-    SafeArea: {
-        flex: 1,
-        paddingTop: StatusBar.currentHeight,
-      },
     logo: {
         width: 150,
         height: 110,
         marginBottom: 20,
-        marginTop: -150
+        marginTop: 40
     },
     logoProfissional: {
         width: 80,
@@ -161,10 +155,6 @@ const styles= StyleSheet.create({
         shadowOpacity: 0.8,
         shadowRadius: 2,
     },
-    scrollView: {
-        backgroundColor: 'black',
-        marginHorizontal: 20,
-      },
     title: {
         fontSize: 25,
         fontWeight: 'bold',
