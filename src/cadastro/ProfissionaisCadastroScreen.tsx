@@ -42,7 +42,7 @@ function ProfissionaisCadastroScreen(): JSX.Element {
     }
     
     return (
-        <ScrollView style={{height: '100%', width: "auto"}}>
+        <ScrollView style={{width: "auto"}}>
         <View style={styles.container}>
             <Image style={styles.logo} resizeMode="contain"
             source={require('../assets/imagens/logo.png')} />
