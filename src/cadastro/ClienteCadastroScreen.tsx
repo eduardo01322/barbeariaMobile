@@ -47,7 +47,7 @@ function ClientesCadastroScreen(): JSX.Element {
             
             <View style={styles.card}>
             <Image style={styles.logoProfissional} resizeMode="contain"
-            source={require('../assets/imagens/pngtree-scissor-and-comb.png')} />
+            source={require('../assets/imagens/user.png.png')} />
                 <Text style={styles.title}>Cadastro cliente</Text>
 
                 <TextInput style={styles.input} placeholder="Nome"
