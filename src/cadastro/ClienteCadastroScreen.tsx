@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-function ProfissionaisCadastroScreen(): JSX.Element {
+function ClientesCadastroScreen(): JSX.Element {
 
     const [nome, setNome] = useState("");
     const [celular, setCelular] = useState("");
@@ -16,7 +16,6 @@ function ProfissionaisCadastroScreen(): JSX.Element {
     const [bairro, setBairro] = useState("");
     const [cep, setCep] = useState("");
     const [complemento, setComplemento] = useState("");
-    const [salario, setSalario]= useState("");
     const [password, setPassword] = useState("");
 
     function login(){
@@ -34,7 +33,6 @@ function ProfissionaisCadastroScreen(): JSX.Element {
             bairro: bairro,
             cep: cep,
             complemento: complemento,
-            salario:salario,
             password: password,
         }
 
@@ -50,7 +48,7 @@ function ProfissionaisCadastroScreen(): JSX.Element {
             <View style={styles.card}>
             <Image style={styles.logoProfissional} resizeMode="contain"
             source={require('../assets/imagens/pngtree-scissor-and-comb.png')} />
-                <Text style={styles.title}>Cadastro Profissional</Text>
+                <Text style={styles.title}>Cadastro cliente</Text>
 
                 <TextInput style={styles.input} placeholder="Nome"
                 placeholderTextColor="#151413"
@@ -103,10 +101,6 @@ function ProfissionaisCadastroScreen(): JSX.Element {
                 <TextInput style={styles.input} placeholder="Complemento"
                 placeholderTextColor="#151413"
                 onChangeText={(textComplemento) => setComplemento(textComplemento)}
-                />
-                <TextInput style={styles.input} placeholder="Salário"
-                placeholderTextColor="#151413"
-                onChangeText={(textSalario) => setSalario(textSalario)}
                 />
                 <TextInput style={styles.input} placeholder="Senha"
                 placeholderTextColor="#151413"
@@ -189,4 +183,4 @@ const styles= StyleSheet.create({
     }
 })
 
-export default ProfissionaisCadastroScreen;
+export default ClientesCadastroScreen;

@@ -5,6 +5,7 @@ import ClienteLoginScreen from "./src/login/ClienteLoginScreen";
 import AdmCadastroScreen from "./src/cadastro/AdmCadastroScreen";
 import ProfissionaisLoginScreen from "./src/login/ProfissionaisloginScreen";
 import ProfissionaisCadastroScreen from "./src/cadastro/ProfissionaisCadastroScreen";
+import ClientesCadastroScreen from "./src/cadastro/ClienteCadastroScreen";
 
 function App(): JSX.Element {
 
@@ -13,7 +14,8 @@ function App(): JSX.Element {
     //<AdmLoginScreen/>
     //<ClienteLoginScreen/>
     //<AdmCadastroScreen/>
-    <ProfissionaisCadastroScreen/>
+    //<ProfissionaisCadastroScreen/>
+    <ClientesCadastroScreen/>
   );
 
 }
