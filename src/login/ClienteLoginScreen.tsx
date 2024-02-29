@@ -22,6 +22,7 @@ function ClienteLoginScreen(): JSX.Element {
         <Image style= {styles.logoCliente}resizeMode="contain" 
         source={require('../assets/imagens/user.png.png')}></Image>
             <Text style= {styles.title}>Login Cliente</Text>
+            
             <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"} onChangeText={(textEmail) => setEmail(textEmail)}></TextInput>
             <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"#151413"} onChangeText={(textpassword) => setPassword(textpassword)} secureTextEntry></TextInput>
             <TouchableOpacity style={styles.button} onPress={()=>{login()}}>

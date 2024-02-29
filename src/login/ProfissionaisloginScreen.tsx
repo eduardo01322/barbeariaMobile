@@ -16,7 +16,7 @@ function ProfissionaisLoginScreen(): JSX.Element {
     }
     
     return (
-        <View style={styles.cotainer}>
+        <View style={styles.container}>
             <Image style={styles.logo} resizeMode="contain"
             source={require('../assets/imagens/logo.png')} />
             
@@ -46,7 +46,7 @@ function ProfissionaisLoginScreen(): JSX.Element {
 }
 
 const styles= StyleSheet.create({
-    cotainer:{
+    container:{
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
